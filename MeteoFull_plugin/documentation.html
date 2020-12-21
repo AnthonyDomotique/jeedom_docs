@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                width: 100%;
+                margin: -0px 0 0 0;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                color: black;
+            }
+            .page_header {
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 200px;
+                width: 100%;
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                text-align: center;
+                padding: 75px 0 0 0;
+            }
+            .titre_name {
+                margin: 0;
+                font-size: 4em;
+            }
+            .sous_titre_name {
+                margin: 0;
+                font-size: 2em;
+            }
+            .main-content {
+                margin: 0 auto;
+                width: 1500px;
+                /*max-height: 800px;
+                overflow: hidden;
+                overflow-y: auto;*/
+            }    
+            .main-content table {
+                border-spacing: 50px;
+            }
+            .main-content td {
+                vertical-align: top;
+            } 
+            .img_logo img {
+                max-width: 200px;
+                margin: 0 25px;
+            }  
+            td.infos_importante p {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            span.infos_importante {
+                font-weight: bold;
+                font-style: italic;
+                color: #de0c1a;
+            }
+            h1.presentation,
+            h1.informations,
+            h1.menu,
+            h1.documentation {
+                color: #f89700;
+                border-bottom: #de0c1a 2px solid;
+                margin: 0;
+            }
+            td.informations {
+                height: 100px;
+                width: 250px;
+                /*position: fixed !important;
+                top: 600px;*/
+            }
+            td.informations ul {
+                font-size: 0.8em;
+            } 
+            td.informations li {
+                text-decoration: none !important;
+                margin: 5px 0 5px -20px;
+                list-style: none;
+            } 
+            .menu_documentation {
+                width: 250px;
+                position: fixed !important;
+                top: 750px;
+            }
+            .menu_documentation dl {
+                font-size: 0.8em;
+                margin: 0 20px;
+            }
+            .menu_documentation dt {
+                text-decoration: none !important;
+                margin: 5px 0;
+            }
+            .menu_documentation a {
+                text-decoration: none !important;
+                color: black;
+            }
+            .menu_documentation a:hover {
+                color: #d45721;
+            }
+            .detail_documentation h2.version_documentation {
+                margin: 40px 0 0 20px;
+                font-size: 1.1em;
+                color: #d45721;
+            }
+            .detail_documentation dt.version_documentation {
+                margin: 10px 20px 0 40px;
+                padding: 0;
+                color: #de0c1a;
+                font-weight: bold;
+            }
+            .detail_documentation dd.version_documentation {
+                margin: 0 20px 0 60px;
+            }
+            .detail_documentation p.version_documentation {
+                margin: 10px 20px 0 40px;
+            }
+            .detail_documentation img {
+                max-width: 1000px;
+                max-height: 1000px;
+                text-align: center;
+                margin: 10px auto 0 auto;
+            }
+            .site_footer {
+                margin-top: 0 50px 0 50px;
+                padding-top: 10px;
+                font-style: italic;
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 75px;
+                width: 100%;
+                color: white;
+            }
+            .footer_nav_credits {
+                width: 1500px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .navigation {
+                float: left;
+                margin: 0 0 0 50px;
+            }
+            .navigation a {
+                text-decoration: none !important;
+                color:white;
+            }
+            .navigation a:hover {
+                text-decoration: none !important;
+                color: #6f0007;
+            }
+            .site_footer_credits {
+                text-align: right;
+                font-style: italic;
+            }
+            .site_footer_credits {
+                float: right;
+                margin: 0 50px 0 0;
+            }
+        </style>
+        <title>MeteoFull - Documentation</title>
+    </head>
+    <body>
+        <section id="top_page" class="page_header">
+            <h1 class="titre_name">MeteoFull</h1>
+            <h2 class="sous_titre_name">Documentation</h2>
+        </section>
+        <section class="main-content">
+            <table>
+                <tr>
+                    <td class="img_logo">
+                        <img src="MeteoFull_icon.png" />
+                    </td>
+                    <td class="infos_importante">
+                        <h1 class="presentation">PRESENTATION</h1>
+                        <p>Le plugin est le fruit de la réalisation du widget MeteoFull. De ce fait, le manque de fonctionnalités, de commandes pour son utilisation dans les scénarios, ... a fait naître l'obligation de développer ce plugin. Il permettra de faire tout ce que le widget faisait, à savoir bénéficier de la météo quotidienne et heure par heure pour 5 jours, mais également d'obtenir des statistiques, une personnalisation toujours plus poussée, ...</p>
+                        <p class="infos_importante"><span class="infos_importante">Pré-requis</span> aucun, à part un jeedom 4.0 minimum.</p>
+                        <p>Ce plugin fut un projet mené à trois développeurs. En effet, jcamus86 et jvanoost m'ont rejoint pour la réalisation de ce plugin. Sans eux, il ne pourrait y avoir de plugin. Je tiens à les remercier. De plus, sans les béta-testeurs qui sont Toms, iPapy, Olive, Foulek57, on n'aurait pu sortir le plugin tout de suite. Merci également à eux.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="informations">
+                        <h1 class="informations">INFORMATIONS</h1>
+                        <ul>
+                            <li>Version : 01.00</li>
+                            <li>Date mise à jour : 20/12/2020</li>
+                            <li>Dernière modification : Création</li>
+                        </ul>
+                    </td>
+                    <td rowspan="2" class="detail_documentation">
+                        <h1 class="documentation">DOCUMENTATION</h1>
+                            <h2 id="description" class="version_documentation">DESCRIPTION</h2>
+                                <dl class="version_documentation">
+                                    <dt id="desc_fonctionnalite" class="version_documentation">Fonctionnalité :</dt>
+                                    <dd class="version_documentation">- Prévision de la météo sur 5 jours.</dd>
+                                    <dd class="version_documentation">- Prévision de la météo sur 24h pour chacun des 5 jours.</dd>
+                                    <dd class="version_documentation">- Condition météorologique actuelle, pour les 5 jours et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Température actuelle, min et max pour les 5 jours et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Température ressentie sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Vent (vitesse et direction) actuelle, moyenne pour les 5 jours, et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Rafales actuelles, max pour les 5 jours, et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Précipitation actuelle, cumul pour les 5 jours, et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Humidité actuelle, moyenne pour les 5 jours, et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Pression actuelle, moyenne pour les 5 jours, et sur 24h pour les 5 jours.</dd>
+                                    <dd class="version_documentation">- Ephéméride (lever & coucher de soleil, indice UV, lever & coucher de la lune, phase de la lune).</dd>
+                                    <dt id="desc_commandes" class="version_documentation">Commandes disponibles :</dt>
+                                    <dd class="version_documentation">- <span class="infos_importante">Toutes les prévisions quotidiennes ci-dessus</span> sont disponibles en commandes. En effet, nous ne pouvons pas créer toutes les données heure par heure en commandes. Sans quoi, votre jeedom ne pourrait pas le supporter. Pour en savoir plus n'hésitez pas à aller voir le paragraphe sur l'<a href="#utilisation" class="anchor_documentation">Utilisation ici.</a></dd>
+                                </dl>
+                            <h2 id="instal_config" class="version_documentation">INSTALLATION & CONFIGURATION</h2>
+                                <dl class="version_documentation">
+                                    <dt id="installation" class="version_documentation">Installation :</dt>
+                                    <dd class="version_documentation">- Aucune action supplémentaire à part installer le plugin depuis le market.</dd>
+                                    <dt id="configuration" class="version_documentation">Configuration :</dt>
+                                    <dd class="version_documentation">- Aucune action à configurer à la suite de l'installation du plugin.</dd>
+                                    <img src="MeteoFull_config.png" />
+                                </dl>
+                            <h2 id="equipement" class="version_documentation">EQUIPEMENT</h2>
+                                <dl class="version_documentation">
+                                    <dt id="page_plugin" class="version_documentation">La page d'équipement permet de :</dt>
+                                    <dd class="version_documentation">- Ajouter un équipement.</dd>
+                                    <dd class="version_documentation">- Modifier la configuration si besoin (pour le moment il n'y en a pas).</dd>
+                                    <dd class="version_documentation">- Se rendre sur le site de la documentation.</dd>
+                                    <dd class="version_documentation">- Se rendre sur le fils du plugin sur le community.</dd>
+                                    <img src="MeteoFull_equipement_01.png" />
+                                    <dt class="version_documentation">Comment ajouter un nouvel équipement ?</dt>
+                                    <dd class="version_documentation">- Une fois renseigné le nom de l'équipement, on arrive sur cet écran.</dd>
+                                    <img src="MeteoFull_equipement_02.png" />
+                                    <p id="param_globaux">Dans un premier temps, nous allons voir les paramètres globaux au plugin.</p>
+                                    <img src="MeteoFull_equipement_03.png" />
+                                    <dt class="version_documentation">Définition de tous les champs :</dt>
+                                    <dd class="version_documentation">- Les classiques de tous les équipements (Nom, Objet parent, Catégorie, Activer, Visible).</dd>
+                                    <dt class="version_documentation">Auto-actualisation (cron) :</dt>
+                                    <dd class="version_documentation">- Permet de définir l'auto-actualisation des données du plugin. Par défaut le cron est réglé sur toutes les 5 minutes. Pour information, si les données ne changent pas, le widget ne sera pas re-généré, on gardera celui en cache.</dd>
+                                    <dt class="version_documentation">Zone géographique :</dt>
+                                    <dd class="version_documentation">- Pour le moment il n'y a qu'un seul choix. En effet, aucune autre API disponible fournit les mêmes données que celles avec laquelle le plugin tourne. Malheureusemen cette API n'est fonctionnelle que pour la France Métropole, la Suisse et la Belgique. Nous n'avons pas oublié les autres. Nous sommes toujours entrain de chercher des solutions. Si jamais vous connaissez des API offrant les mêmes données, n'hésitez pas à nous le faire savoir sur le fils du plugin du community.</dd>
+                                    <dt class="version_documentation">Localisation : </dt>
+                                    <dd class="version_documentation">- Ici, vous avez le choix entre "Configuration Jeedom" et "Configuration "Manuelle". Si vous avez renseigné votre localisation dans la configuration Jeedom par la latitude et la longitude, le plugin peut récupérer cette localisation. Cependant, si vous ne l'avez pas renseigné, ou bien pour un second équipement, vous devez renseigner manuellement la latitude et la longitude du lieu en question. Par défaut, ce sont les coordonnées de Paris.</dd>
+                                    <img src="MeteoFull_equipement_04.png" />
+                                    <p id="param_widget">Maintenant, passons aux paramètres concernant le design du widget.</p>
+                                    <img src="MeteoFull_equipement_05.png" />
+                                    <dt class="version_documentation">Affichage de la météo : </dt>
+                                    <dd class="version_documentation">- Cela vous permet de décider si vous voulez afficher dans le widget la météo actuelle, ainsi que le panneau de la météo heure par heure pour le jour sélectionné.</dd>
+                                    <dt class="version_documentation">Nombre de jour à afficher :</dt>
+                                    <dd class="version_documentation">- De 1 à 5 jours à afficher dans le widget. Donc si vous sélectionnez 5 jours, vous aurez les prévisions jusqu'à j+4 (le jour actuel + 4 jours).</dd>
+                                    <dt class="version_documentation">Données à afficher :</dt>
+                                    <dd class="version_documentation">- Ici, vous choisissez les données que vous voulez afficher dans le widget. Pour certaines données, vous pouvez en plus sélectionner si vous souhaitez avoir un dégradé de couleurs ou pas. <span class="infos_importante">Attention</span>, pour la température, si vous décidez de ne pas avoir de dégradé, vous aurez dans ce cas, du bleu pour le minimum et du rouge pour le maximum seulement pour les prévisions quotidiennes. Sinon pour tout le reste, il n'y aura pas de couleurs de fond.</dd>
+                                    <dt class="version_documentation">Indicateur de vent fort :</dt>
+                                    <dd class="version_documentation">- Permet d'avoir une icône afin d'attirer l'attention sur la prévision du vent si la vitesse de ce dernier dépasse le seuil indiqué. Par défaut il est fixé à 200 km/h et non activé.</dd>
+                                    <dt class="version_documentation">Indicateur de fortes précipitations :</dt>
+                                    <dd class="version_documentation">- Comme ci-dessous, une icône apparaîtra si vous l'activez et s'il y a dépassement du seuil renseigné (par défaut à 50 mm).</dd>
+                                    <dt id="sauvegarde" class="version_documentation">Sauvegarde :</dt>
+                                    <dd class="version_documentation">- Il ne vous reste plus qu'à sauvegarder, et tout est fini au niveau du paramétrage. <span class="infos_importante">Attention, en fonction des performances de votre système, il peut y avoir un peu d'attente lors de la sauvegarde</span>. En effet, c'est en sauvegardant que le plugin créé toutes les commandes utilisables. Ne vous inquiétez pas, il n'y en a pas pour 1 heure. En général au bout de 30 secondes, c'est fini. Mais si malheureusement votre Jeedom est installé sur une machine avec peu de ressources, cela peut prendre un peu plus de temps. Ensuite, plus de soucis. Tout marche sans latence.</dd>
+                                </dl>
+                            <h2 id="utilisation" class="version_documentation">UTILISATION</h2>
+                                <dl class="version_documentation">
+                                    <p>Pour information, aucune commande n'est historisée par défaut. Si vous le souhaitez, c'est à vous de le paramétrer pour chacune des commandes souhaitées.</p>
+                                    <dt class="version_documentation">Commandes conditions actuelles</dt>
+                                    <img src="MeteoFull_utilisation_01.png" />
+                                    <dt class="version_documentation">Commandes conditions du jour</dt>
+                                    <img src="MeteoFull_utilisation_02.png" />
+                                    <dt class="version_documentation">Commandes conditions des 24 prochaines heures</dt>
+                                    <img src="MeteoFull_utilisation_03.png" />
+                                    <dt class="version_documentation">Commandes conditions du lendemain</dt>
+                                    <img src="MeteoFull_utilisation_04.png" />
+                                    <dt class="version_documentation">Commandes conditions du sur-lendemain</dt>
+                                    <img src="MeteoFull_utilisation_05.png" />
+                                    <dt class="version_documentation">Commandes conditions dans 3 jours</dt>
+                                    <img src="MeteoFull_utilisation_06.png" />
+                                    <dt class="version_documentation">Commandes conditions dans 4 jours</dt>
+                                    <img src="MeteoFull_utilisation_07.png" />
+                                </dl>
+                            <h2 id="widget" class="version_documentation">WIDGET</h2>
+                                <dl class="version_documentation">
+                                    <p>Voici plusieurs rendu possible de widget.</p>
+                                    <dt class="version_documentation">Full, thème dark</dt>
+                                    <img src="MeteoFull_widget_01.png" />
+                                    <dt class="version_documentation">Full, thème legacy</dt>
+                                    <img src="MeteoFull_widget_02.png" />
+                                    <dt class="version_documentation">Full, thème light</dt>
+                                    <img src="MeteoFull_widget_03.png" />
+                                    <dt class="version_documentation">Sans le panneau des conditions horaires, thème dark</dt>
+                                    <img src="MeteoFull_widget_04.png" />
+                                    <dt class="version_documentation">3 jours d'affichés, thème dark</dt>
+                                    <img src="MeteoFull_widget_05.png" />
+                                </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="menu_documentation">
+                        <h1 class="menu">NAVIGATION</h1>
+                        <dl>
+                            <dt><a href="#top_page" class="anchor_documentation">Revenir en haut</a></dt>
+                            <dt style="color:#de0c1a">-------------------------------------------------</dt>
+                            <dt><a href="#description" class="anchor_documentation">Description</a></dt>
+                            <dd><a href="#desc_fonctionnalite" class="anchor_documentation">Fonctionnalités</a></dd>
+                            <dd><a href="#desc_commandes" class="anchor_documentation">Commandes</a></dd>
+                            <dt><a href="#instal_config" class="anchor_documentation">Installation & Configuration</a></dt>
+                            <dd><a href="#installation" class="anchor_documentation">Installation</a></dd>
+                            <dd><a href="#configuration" class="anchor_documentation">Configuration</a></dd>
+                            <dt><a href="#equipement" class="anchor_documentation">Equipement</a></dt>
+                            <dd><a href="#page_plugin" class="anchor_documentation">Page du plugin</a></dd>
+                            <dd><a href="#param_globaux" class="anchor_documentation">Paramètres globaux</a></dd>
+                            <dd><a href="#param_widget" class="anchor_documentation">Paramètres widget</a></dd>
+                            <dd><a href="#sauvegarde" class="anchor_documentation">Sauvegarde</a></dd>
+                            <dt><a href="#utilisation" class="anchor_documentation">Utilisation</a></dt>
+                            <dt><a href="#widget" class="anchor_documentation">Widget</a></dt>
+                            <dt style="color:#de0c1a">-------------------------------------------------</dt>
+                            <dt><a href="https://anthonydomotique.github.io/jeedom_docs/index.html" class="anchor_documentation">Développements AnthonyDomotique</a></dt>
+                            <dt><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/documentation.html" class="anchor_documentation">Documentation du plugin MeteoFull</a></dt>
+                            <dt><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/changelog.html" class="anchor_documentation">Changelog du plugin MeteoFull</a></dt>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer class="site_footer">
+            <div class="footer_nav_credits">
+                <table class="navigation">
+                    <tr>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/index.html">Développements AnthonyDomotique</a></td>
+                        <td>-</td>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/documentation.html">Documentation du plugin MeteoFull</a></td>
+                        <td>-</td>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/changelog.html">Changelog du plugin MeteoFull</a></td>
+                    </tr>
+                </table>
+                <span class="site_footer_credits">Documentation pour Jeedom</span>
+            </div>
+        </footer>
+    </body>
+</html>

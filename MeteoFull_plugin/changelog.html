@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                width: 100%;
+                margin: -0px 0 0 0;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                color: black;
+            }
+            .page_header {
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 200px;
+                width: 100%;
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                text-align: center;
+                padding: 75px 0 0 0;
+            }
+            .titre_name {
+                margin: 0;
+                font-size: 4em;
+            }
+            .sous_titre_name {
+                margin: 0;
+                font-size: 2em;
+            }
+            .main-content {
+                margin: 0 auto;
+                width: 1500px;
+                max-height: 800px;
+                overflow: hidden;
+                overflow-y: auto;
+            }    
+            .main-content table {
+                border-spacing: 50px;
+            }
+            .main-content td {
+                vertical-align: top;
+            } 
+            .img_logo img {
+                max-width: 200px;
+                margin: 0 25px;
+            }  
+            p.infos_impoortante {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            span.info_importante {
+                font-weight: bold;
+                font-style: italic;
+                color: #de0c1a;
+            }
+            h1.information,
+            h1.historique,
+            h1.changelog {
+                color: #f89700;
+                border-bottom: #de0c1a 2px solid;
+                margin: 0;
+            }
+            .histo_changelog {
+                width: 250px;
+            }
+            .histo_changelog ul {
+                font-size: 0.8em;
+            }
+            .histo_changelog li {
+                text-decoration: none !important;
+                margin: 5px 0;
+            }
+            .histo_changelog a {
+                text-decoration: none !important;
+                color: black;
+            }
+            .histo_changelog a:hover {
+                color: #d45721;
+            }
+            .detail_changelog h2.version_changelog {
+                margin: 40px 0 0 20px;
+                font-size: 1.1em;
+                color: #d45721;
+            }
+            .detail_changelog dt.version_changelog {
+                margin: 10px 20px 0 40px;
+                padding: 0;
+                text-decoration: underline;
+            }
+            .detail_changelog dd.version_changelog {
+                margin: 0 20px 0 60px;
+            }
+            .detail_changelog p.version_changelog {
+                margin: 10px 20px 0 40px;
+            }
+            .site_footer {
+                margin-top: 0 50px 0 50px;
+                padding-top: 10px;
+                font-style: italic;
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 75px;
+                width: 100%;
+                color: white;
+            }
+            .footer_nav_credits {
+                width: 1500px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .navigation {
+                float: left;
+                margin: 0 0 0 50px;
+            }
+            .navigation a {
+                text-decoration: none !important;
+                color:white;
+            }
+            .navigation a:hover {
+                text-decoration: none !important;
+                color: #6f0007;
+            }
+            .site_footer_credits {
+                text-align: right;
+                font-style: italic;
+            }
+            .site_footer_credits {
+                float: right;
+                margin: 0 50px 0 0;
+            }
+        </style>
+        <title>MeteoFull | Changelog</title>
+    </head>
+    <body>
+        <section class="page_header">
+            <h1 class="titre_name">MeteoFull</h1>
+            <h2 class="sous_titre_name">Changelog</h2>
+        </section>
+        <section class="main-content">
+            <table>
+                <tr>
+                    <td class="img_logo">
+                        <img src ="MeteoFull_icon.png" />
+                    </td>
+                    <td>
+                        <h1 class="information">INFORMATIONS</h1>
+                        <p class="infos_impoortante"><span class="info_importante">Pour rappel</span> s’il n’y a pas d’information sur la mise à jour, c’est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="histo_changelog">
+                        <h1 class="historique">HISTORIQUE</h1>
+                        <ul>
+                            <li><a href="#v00_02-2020_12_19" class="anchor_changelog">V 00.02 - 19/12/2020 - Fixed</a></li>
+                            <li><a href="#v00_01-2020_12_18" class="anchor_changelog">V 00.01 - 18/12/2020 - Changed</a></li>
+                            <li><a href="#v00_00-2020_12_18" class="anchor_changelog">V 00.00 - 18/12/2020 - Beta</a></li>
+                        </ul>
+                    </td>
+                    <td class="detail_changelog">
+                        <h1 class="changelog">CHANGELOG</h1>
+                            <!-- 
+                                MEMO DES INFORMATIONS : 
+                                    Types de changements
+                                        - Added : pour les nouvelles fonctionnalités.
+                                        - Changed : pour les changements aux fonctionnalités préexistantes.
+                                        - Deprecated : pour les fonctionnalités qui seront bientôt supprimées.
+                                        - Removed : pour les fonctionnalités désormais supprimées.
+                                        - Fixed : pour les corrections de bugs.
+                                        - Security : en cas de vulnérabilités.
+                            -->
+                            <h2 id="v00_02-2020_12_19" class="version_changelog">V 00.02 - 19 décembre 2020</h2>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Fixed :</dt>
+                                    <dd class="version_changelog">Correction pour la génération du widget pour la partie mobile.</dd>
+                                </dl>
+                            <h2 id="v00_01-2020_12_18" class="version_changelog">V 00.01 - 18 décembre 2020</h2>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Changed :</dt>
+                                    <dd class="version_changelog">Augmentation du timeout pour la récupération des informations par l'API.</dd>
+                                </dl>
+                            <h2 id="v00_00-2020_12_18" class="version_changelog">V 00.00 - 18 décembre 2020</h2>
+                                <p class="version_changelog">Lancement de la béta du plugin MeteoFull.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer class="site_footer">
+            <div class="footer_nav_credits">
+                <table class="navigation">
+                    <tr>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/index.html">Développements AnthonyDomotique</a></td>
+                        <td>-</td>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/documentation.html">Documentation du plugin MeteoFull</a></td>
+                        <td>-</td>
+                        <td><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/changelog.html">Changelog du plugin MeteoFull</a></td>
+                    </tr>
+                </table>
+                <span class="site_footer_credits">Documentation pour Jeedom</span>
+            </div>
+        </footer>
+    </body>
+</html>
