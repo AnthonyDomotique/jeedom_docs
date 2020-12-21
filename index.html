@@ -1,1 +1,151 @@
-<h1>Documentation & Changelog de tous les développements<h1>
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                width: 100%;
+                margin: -0px 0 0 0;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                color: black;
+            }
+            .page_header {
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 200px;
+                width: 100%;
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                text-align: center;
+                padding: 75px 0 0 0;
+            }
+            .titre_name {
+                margin: 0;
+                font-size: 4em;
+            }
+            .sous_titre_name {
+                margin: 0;
+                font-size: 2em;
+            }
+            .main_content {
+                margin: 0 auto;
+                width: 1500px;
+                /*max-height: 800px;
+                overflow: hidden;
+                overflow-y: auto;*/
+            }    
+            .main_content table {
+                border-spacing: 0 50px;
+            }
+            .main_content td {
+                vertical-align: top;
+            } 
+            .main_content img {
+                max-width: 200px;
+                margin: 0 25px;
+            }  
+            h1.information {
+                color: #f89700;
+                border-bottom: #de0c1a 2px solid;
+                margin: 0;
+            }
+            h2.developpements {
+                margin: 0;
+                font-size: 2em;
+                color: #d45721;
+            }
+            .devs_infos {
+                text-align: center;
+            }
+            .dev_details {
+                text-align: justify;
+                padding-top: 30px;
+            }
+            .dev_details div {
+                text-align: center;
+                margin-top: 50px;
+            }
+            .dev_details a {
+                text-decoration: none !important;
+                color: black;
+                margin: 0 20px;
+            }
+            .dev_details a:hover {
+                color: #d45721;
+            }
+            .main_content tr.developpements_impairs {
+                background-color:rgb(248,151,0,0.1)
+            }
+            .main_content tr.developpements_pairs {
+                background-color:rgb(222,12,26,0.1)
+            }
+            .main_content p {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 25px;
+            }
+            span.infos_importante {
+                font-weight: bold;
+                font-style: italic;
+                color: #de0c1a;
+            }
+            .site_footer {
+                margin-top: 0 50px 0 50px;
+                padding-top: 10px;
+                font-style: italic;
+                background-image: linear-gradient(180deg, #f89700, #de0c1a);
+                height: 75px;
+                width: 100%;
+                color: white;
+            }
+            .footer_nav_credits {
+                width: 1500px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .site_footer_credits {
+                text-align: right;
+                font-style: italic;
+            }
+            .site_footer_credits {
+                float: right;
+                margin: 0 50px 0 0;
+            }
+        </style>
+        <title>AnthonyDomotique | Développements</title>
+    </head>
+    <body>
+        <section class="page_header">
+            <h1 class="titre_name">AnthonyDomotique</h1>
+            <h2 class="sous_titre_name">Mes développements</h2>
+        </section>
+        <section class="main_content">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1 class="information">INFORMATIONS</h1>
+                        <p>Vous trouverez ci-joint les liens vers les documentations et changelogs de mes développement.</p>
+                    </td>
+                </tr>
+                <tr class="developpements_impairs">
+                    <td class="devs_infos">
+                        <h2 class="developpements">MeteoFull</h2>
+                        <br />
+                        <img src ="MeteoFull_plugin/MeteoFull_icon.png" />
+                    </td>
+                    <td class="dev_details">
+                        <p>Le plugin est le fruit de la réalisation du widget MeteoFull. De ce fait, le manque de fonctionnalités, de commandes pour son utilisation dans les scénarios, ... a fait naître l'obligation de développer ce plugin. Il permettra de faire tout ce que le widget faisait, à savoir bénéficier de la météo quotidienne et heure par heure pour 5 jours, mais également d'obtenir des statistiques, une personnalisation toujours plus poussée, ...</p>
+                        <p>Ce plugin fut un projet mené à trois développeurs. En effet, jcamus86 et jvanoost m'ont rejoint pour la réalisation de ce plugin. Sans eux, il ne pourrait y avoir de plugin. Je tiens à les remercier. De plus, sans les béta-testeurs qui sont Toms, iPapy, Olive, Foulek57, on n'aurait pu sortir le plugin tout de suite. Merci également à eux.</p>
+                        <div><a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/documentation.html">Documentation</a> - <a href="https://anthonydomotique.github.io/jeedom_docs/MeteoFull_plugin/changelog.html">Changelog</a></div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer class="site_footer">
+            <div class="footer_nav_credits">
+                <span class="site_footer_credits">Documentation pour Jeedom</span>
+            </div>
+        </footer>
+    </body>
+</html>
