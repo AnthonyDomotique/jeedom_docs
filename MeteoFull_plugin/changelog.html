@@ -150,10 +150,18 @@
                 <tr>
                     <td class="histo_changelog">
                         <h1 class="historique">HISTORIQUE</h1>
+                        <!-- 
+                            MEMO VERSIONS : w.x.y.z
+                                    w est le numéro de version Majeure : il est incrémenté lorsque de grosses modifications ont été apportées, et qui cassent la compatibilité avec la version majeure précédente w-1, nécessitant donc de grosses modifications dans les projets pour la migration.
+                                    x est le numéro de version Mineure : il est incrémenté quand il y a de nouvelles fonctionnalités, évolutions, corrections de bugs etc. Par contre un projet basé sur une version w.x doit être compatible avec une version w.x-1.
+                                    y est le numéro de version de correction, appelé Release: il change quand il y a eu simplement des corrections de bugs par rapport à la version w.x.y-1.
+                                    - z est le numéro de version de build : Celui-ci permet de s'incrémenter à chaque fois que vous compiler votre programme.
+                        -->
                         <ul>
-                            <li><a href="#v00_02-2020_12_19" class="anchor_changelog">V 00.02 - 19/12/2020 - Fixed</a></li>
-                            <li><a href="#v00_01-2020_12_18" class="anchor_changelog">V 00.01 - 18/12/2020 - Changed</a></li>
-                            <li><a href="#v00_00-2020_12_18" class="anchor_changelog">V 00.00 - 18/12/2020 - Beta</a></li>
+                            <li><a href="#v00_01-2020_12_21" class="anchor_changelog">V 00.00.03 - 21/12/2020 - Changed (Beta)</a></li>
+                            <li><a href="#v00_02-2020_12_19" class="anchor_changelog">V 00.00.02 - 19/12/2020 - Fixed (Beta)</a></li>
+                            <li><a href="#v00_01-2020_12_18" class="anchor_changelog">V 00.00.01 - 18/12/2020 - Changed (Beta)</a></li>
+                            <li><a href="#v00_00-2020_12_18" class="anchor_changelog">V 00.00.00 - 18/12/2020 - Beta</a></li>
                         </ul>
                     </td>
                     <td class="detail_changelog">
@@ -168,17 +176,23 @@
                                         - Fixed : pour les corrections de bugs.
                                         - Security : en cas de vulnérabilités.
                             -->
-                            <h2 id="v00_02-2020_12_19" class="version_changelog">V 00.02 - 19 décembre 2020</h2>
+                            <h2 id="v00_02-2020_12_21" class="version_changelog">V 00.00.03 (Beta) - 21 décembre 2020</h2>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Changed :</dt>
+                                    <dd class="version_changelog">Priorité donnée à la configuration Jeedom même si des coordonnées ont été renseigné.</dd>
+                                    <dd class="version_changelog">Modification du fond pour les UV de 0.</dd>
+                                </dl>
+                            <h2 id="v00_02-2020_12_19" class="version_changelog">V 00.00.02 (Beta) - 19 décembre 2020</h2>
                                 <dl class="version_changelog">
                                     <dt class="version_changelog">Fixed :</dt>
                                     <dd class="version_changelog">Correction pour la génération du widget pour la partie mobile.</dd>
                                 </dl>
-                            <h2 id="v00_01-2020_12_18" class="version_changelog">V 00.01 - 18 décembre 2020</h2>
+                            <h2 id="v00_01-2020_12_18" class="version_changelog">V 00.00.01 (Beta) - 18 décembre 2020</h2>
                                 <dl class="version_changelog">
                                     <dt class="version_changelog">Changed :</dt>
                                     <dd class="version_changelog">Augmentation du timeout pour la récupération des informations par l'API.</dd>
                                 </dl>
-                            <h2 id="v00_00-2020_12_18" class="version_changelog">V 00.00 - 18 décembre 2020</h2>
+                            <h2 id="v00_00-2020_12_18" class="version_changelog">V 00.00.00 - 18 décembre 2020</h2>
                                 <p class="version_changelog">Lancement de la béta du plugin MeteoFull.</p>
                     </td>
                 </tr>
