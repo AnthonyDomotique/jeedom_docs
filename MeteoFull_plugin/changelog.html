@@ -158,6 +158,7 @@
                                     - z est le numéro de version de build : Celui-ci permet de s'incrémenter à chaque fois que vous compiler votre programme.
                         -->
                         <ul>
+                            <li><a href="#v00_01_04-2021_01_06" class="anchor_changelog">V 00.01.04 - 06/01/2021 - Fixed (Beta)</a></li>
                             <li><a href="#v00_01_03-2020_12_23" class="anchor_changelog">V 00.01.03 - 23/12/2020 - Fixed (Beta)</a></li>
                             <li><a href="#v00_01_02-2020_12_23" class="anchor_changelog">V 00.01.02 - 23/12/2020 - Fixed (Beta)</a></li>
                             <li><a href="#v00_01_01-2020_12_23" class="anchor_changelog">V 00.01.01 - 23/12/2020 - Fixed (Beta)</a></li>
@@ -181,49 +182,58 @@
                                         - Fixed : pour les corrections de bugs.
                                         - Security : en cas de vulnérabilités.
                             -->
-                            <h2 id="v00_01_03-2020_12_23" class="version_changelog">V 00.01.03 (Beta) - 23 décembre 2020</h2>
-                            <dl class="version_changelog">
-                                <dt class="version_changelog">Fixed :</dt>
-                                <dd class="version_changelog">Correctif sur le widget pour les tooltips des conditions. Problème de superposition entre les différents panels d'heures.</dd>
-                            </dl>
+                            <h2 id="v00_01_04-2021_01_06" class="version_changelog">V 00.01.04 (Beta) - 06 janvier 2021</h2>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Fixed (Core) :</dt>
+                                    <dd class="version_changelog">Suppression des chmod 777 pour le dossier. Il est maintenant de base dans le plugin.</dd>
+                                    <dd class="version_changelog">Mise à jour du widget forcée afin d'avoir une cohérence au niveau des heures et des jours.</dd>
+                                    <dt class="version_changelog">Fixed (Widget) :</dt>
+                                    <dd class="version_changelog">Ajout d'un pied au widget pour la date, l'heure de l'actualisation, ainsi que les liens des sources utilisées.</dd>
+                                    <dd class="version_changelog">Mise à jour au niveau des images des conditions manquantes.</dd>
+                                    <dd class="version_changelog">Isolation du CSS afin de ne pas être en conflit avec d'autres widget Jeedom.</dd>
+                                    <dd class="version_changelog">Corrections mineures sur le css du widget (réalignement, fixation des colonnes, ...).</dd>
+                                </dl>
                             <h2 id="v00_01_02-2020_12_23" class="version_changelog">V 00.01.02 (Beta) - 23 décembre 2020</h2>
-                            <dl class="version_changelog">
-                                <dt class="version_changelog">Fixed :</dt>
-                                <dd class="version_changelog">Correction des dépassements de seuil pour les précipitations.</dd>
-                            </dl>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Fixed (Widget) :</dt>
+                                    <dd class="version_changelog">Correction des dépassements de seuil pour les précipitations.</dd>
+                                </dl>
                             <h2 id="v00_01_01-2020_12_23" class="version_changelog">V 00.01.01 (Beta) - 23 décembre 2020</h2>
-                            <dl class="version_changelog">
-                                <dt class="version_changelog">Fixed :</dt>
-                                <dd class="version_changelog">Correction des tooltip vide sur les dépassements de seuil.</dd>
-                            </dl>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Fixed (Widget) :</dt>
+                                    <dd class="version_changelog">Correction des tooltip vide sur les dépassements de seuil.</dd>
+                                </dl>
                             <h2 id="v00_01_00-2020_12_22" class="version_changelog">V 00.01.00 (Beta) - 22 décembre 2020</h2>
-                            <dl class="version_changelog">
-                                <dt class="version_changelog">Added :</dt>
-                                <dd class="version_changelog">Commandes fonctionnelles pour les 24 prochaines heures pour la température et les précipitations. Je vous conseil de resauvegarder votre équipement si jamais vos commandes ne sont toujours pas renseignées.</dd>
-                            </dl>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Added (Core) :</dt>
+                                    <dd class="version_changelog">Commandes fonctionnelles pour les 24 prochaines heures pour la température et les précipitations. Je vous conseil de resauvegarder votre équipement si jamais vos commandes ne sont toujours pas renseignées.</dd>
+                                </dl>
                             <h2 id="v00_00_04-2020_12_22" class="version_changelog">V 00.00.04 (Beta) - 22 décembre 2020</h2>
-                            <dl class="version_changelog">
-                                <dt class="version_changelog">Fixed :</dt>
-                                <dd class="version_changelog">Ergonomie visuelle améliorée pour le thème Legacy.</dd>
-                                <dd class="version_changelog">Ajout image de conditions. Changement du mot clé par le fournisseur de l'API.</dd>
-                                <dd class="version_changelog">Correction sur le cron.</dd>
-                                <dd class="version_changelog">Correction des tooltip vide sur les dépassement de seuil.</dd>
-                                <dd class="version_changelog">Corrections ortographe.</dd>
-                            </dl>
+                                <dl class="version_changelog">
+                                    <dt class="version_changelog">Fixed (Core) :</dt>
+                                    <dd class="version_changelog">Correction sur le cron.</dd>
+                                    <dd class="version_changelog">Corrections ortographe.</dd>
+                                    <dt class="version_changelog">Fixed (Widget) :</dt>
+                                    <dd class="version_changelog">Ergonomie visuelle améliorée pour le thème Legacy.</dd>
+                                    <dd class="version_changelog">Ajout image de conditions. Changement du mot clé par le fournisseur de l'API.</dd>
+                                    <dd class="version_changelog">Correction des tooltip vide sur les dépassement de seuil.</dd>
+                                    <dd class="version_changelog">Corrections ortographe.</dd>
+                                </dl>
                             <h2 id="v00_00_03-2020_12_21" class="version_changelog">V 00.00.03 (Beta) - 21 décembre 2020</h2>
                                 <dl class="version_changelog">
-                                    <dt class="version_changelog">Changed :</dt>
+                                    <dt class="version_changelog">Changed (Core) :</dt>
                                     <dd class="version_changelog">Priorité donnée à la configuration Jeedom même si des coordonnées ont été renseignées.</dd>
+                                    <dt class="version_changelog">Changed (Widget) :</dt>
                                     <dd class="version_changelog">Modification du fond pour les UV de 0.</dd>
                                 </dl>
                             <h2 id="v00_00_02-2020_12_19" class="version_changelog">V 00.00.02 (Beta) - 19 décembre 2020</h2>
                                 <dl class="version_changelog">
-                                    <dt class="version_changelog">Fixed :</dt>
+                                    <dt class="version_changelog">Fixed (Widget) :</dt>
                                     <dd class="version_changelog">Correction pour la génération du widget pour la partie mobile.</dd>
                                 </dl>
                             <h2 id="v00_00_01-2020_12_18" class="version_changelog">V 00.00.01 (Beta) - 18 décembre 2020</h2>
                                 <dl class="version_changelog">
-                                    <dt class="version_changelog">Changed :</dt>
+                                    <dt class="version_changelog">Changed (Core) :</dt>
                                     <dd class="version_changelog">Augmentation du timeout pour la récupération des informations par l'API.</dd>
                                 </dl>
                             <h2 id="v00_00_00-2020_12_18" class="version_changelog">V 00.00.00 - 18 décembre 2020</h2>
