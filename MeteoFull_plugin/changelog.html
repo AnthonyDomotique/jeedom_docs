@@ -162,6 +162,7 @@
                         <ul>
                             <li><a href="#top_page" class="anchor_documentation">Revenir en haut</a></li>
                             <li style="color:#de0c1a">-------------------------------------------------</li>
+                            <li><a href="#v01_01_00-2022_02_05" class="anchor_changelog">V 01.01.00 - 05/02/2022 - Fixed (Stable)</a></li>
                             <li><a href="#v01_00_01-2022_01_18" class="anchor_changelog">V 01.00.01 - 18/01/2022 - Fixed (Stable)</a></li>
                             <li><a href="#v00_02_06-2021_12_30" class="anchor_changelog">V 00.02.06 - 30/12/2021 - Fixed (Beta)</a></li>
                             <li><a href="#v00_02_05-2021_12_26" class="anchor_changelog">V 00.02.05 - 26/12/2021 - Fixed (Beta)</a></li>
@@ -201,6 +202,18 @@
                                 <dt class="version_changelog">Afin de bien prendre en compte les modifications et forcer un rafraîchissement rapidement il est nécessaire de : </dt>
                                 <dd class="version_changelog">Supprimer le fichier source de l'API : Equipement_ID_#ID#_API_previsionMeteo.json se trouvant dans le répertoire /plugins/MeteoFull/data/.</dd>
                                 <dd class="version_changelog">Réenregistrer votre équipement.</dd>
+                            </dl>
+                            <h2 id="v01_01_00-2022_02_05" class="version_changelog">V 01.01.00 (Stable) - 05 février 2022</h2>
+                            <dl class="version_changelog">
+                                <dt class="version_changelog">Fixed (Core) (Merci à JPTY pour ses propositions) :</dt>
+                                <dd class="version_changelog">Correction Index UV HS</dd>
+                                <dd class="version_changelog">Correction durée ensoleillement si previson-meteo n'a pas changé</dd>
+                                <dd class="version_changelog">Simplification code</dd>
+                                <dd class="version_changelog">Optimisation du code</dd>
+                                <dd class="version_changelog">Suppression des fichiers sources Json à chaque sauvegarde pour forcer un rechargement des données.</dd>
+                                <dd class="version_changelog">Mise à jour du cron apr défaut à "9 * * * *" afin d'éviter d'être en conflit avec les crons auto de cron 5.</dd>
+                                <dd class="version_changelog">Corrections de divers warning php.</dd>
+                                <dd class="version_changelog">Correction de liens (doc, changelog et community dans le plugin).</dd>
                             </dl>
                             <h2 id="v01_00_01-2022_01_18" class="version_changelog">V 01.00.01 (Stable) - 18 janvier 2022</h2>
                             <dl class="version_changelog">
